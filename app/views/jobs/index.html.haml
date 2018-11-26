@@ -6,4 +6,8 @@
         %li
             %p Maintenance of railways in Stockholm Län
         %li
-            %p Now job with in construction
+            %p New job within construction
+    .jobs
+        - @jobs.each do |job|
+            = job.title
+
