@@ -1,13 +1,7 @@
-.content
+#content
     %h1 Jobs:
-    %ul
-        %li
-            %p Bob the builder Test 1
-        %li
-            %p Maintenance of railways in Stockholm Län
-        %li
-            %p New job within construction
-    .jobs
+    #jobs
         - @jobs.each do |job|
-            = job['title']
+            .job_title
+                = job['title']
 
