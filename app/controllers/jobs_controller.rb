@@ -1,6 +1,11 @@
 class JobsController < ApplicationController
+  
   def index
     @jobs = fetch_API
+  end
+
+  def show
+  
   end
 end
 
@@ -13,4 +18,5 @@ private
   end
 
 #response[0]['title']
-#response[0]['description]
+#response[0]['description']
+#response[0]['priority']

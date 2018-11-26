@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'jobs/index'
   root controller: :jobs, action: :index
+  resources :jobs, only: [:show]
 end

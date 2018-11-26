@@ -3,5 +3,5 @@
     #jobs
         - @jobs.each do |job|
             .job_title
-                = job['title']
+                = link_to job['title'], job_path(job)
 
