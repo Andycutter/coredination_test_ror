@@ -7,6 +7,5 @@ Feature: List jobs on the landing page
         When I visit the site
         Then I should see 'Bob the builder Test 1'
         And I should see 'Maintenance of railways in Stockholm Län'
-        And I should see 'Now job with in construction'
+        And I should see 'New job within construction'
 
-        
