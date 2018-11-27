@@ -4,7 +4,7 @@ Feature: User must register and login to view job details
     I would like to make use of Devise
 
     Background:
-    Given the following user exist:
+    Given the following user exist
     |email          | password  |
     |test@random.dk | min-kode  |
     And I visit the site
