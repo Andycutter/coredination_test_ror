@@ -17,12 +17,3 @@ private
     api_token = Rails.application.credentials.API_TOKEN
     response = JSON.parse(RestClient.get(url+api_token).body)
   end
-
-#  def job_params
-#    params.require(:job).permit(:title, :description, :priority, :id)
-#  end
-
-#response[0]['title']
-#response[0]['description']
-#response[0]['priority']
-#@jobs[0]['id']
