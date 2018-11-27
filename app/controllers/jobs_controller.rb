@@ -13,8 +13,8 @@ private
 
   def fetch_api
     url = 'https://app.coredination.net/api/1/job?api_token='
-    api_url = Rails.application.credentials.API_TOKEN
-    response = JSON.parse(RestClient.get(url+api_url).body)
+    api_token = Rails.application.credentials.API_TOKEN
+    response = JSON.parse(RestClient.get(url+api_token).body)
   end
 
 #  def job_params
