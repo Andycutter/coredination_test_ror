@@ -13,6 +13,3 @@ private
     api_token = Rails.application.credentials.API_TOKEN
     response = JSON.parse(RestClient.get(url+api_token).body)
   end
-
-#response[0]['title']
-#response[0]['description]
