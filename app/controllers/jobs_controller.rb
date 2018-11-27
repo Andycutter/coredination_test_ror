@@ -1,17 +1,17 @@
 class JobsController < ApplicationController
   
   def index
-    @jobs = fetch_API
+    @jobs = fetch_api
   end
 
   def show
-    @job = fetch_API.find(params[:id])
+    @job = fetch_api.find(params[:id])
   end
 end
 
 private
 
-  def fetch_API
+  def fetch_api
     url = 'https://app.coredination.net/api/1/job?api_token='
     api_url = Rails.application.credentials.API_TOKEN
     response = JSON.parse(RestClient.get(url+api_url).body)
