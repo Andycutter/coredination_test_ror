@@ -1,0 +1,7 @@
+#content
+    %h1 Jobs:
+    #jobs
+        - @jobs.each do |job|
+            .job_title
+                = job['title']
+
