@@ -31,7 +31,7 @@ The three jobs that should appear is:
 
 In the header there is links to root of the page (Home), user registration (Registration) and user login (Login) when you are not logged in. Home and Logout links are displayed when you are logged in.
 
-The details of a job is only availble for logged in users.
+The details of a job is only available for logged in users.
 
 #### Testing
 
