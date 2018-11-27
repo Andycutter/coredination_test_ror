@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   root controller: :jobs, action: :index
 
   resources :jobs, only: :show
-  #match 'job/id' => 'jobs#show', via: :get
-
 end
