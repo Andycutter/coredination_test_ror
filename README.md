@@ -1,4 +1,4 @@
-# Test prov, Coredination
+# Arbetsprov, Coredination
 
 ## Framework
 
@@ -12,12 +12,14 @@ RSpec is used for Unit Tests https://github.com/rspec/rspec-rails
 
 Cucumber is used for Acceptance Tests
 https://github.com/cucumber/cucumber-rails
+
 Because of time limits no styling has been applied. 
 
 ## Documentation
 
 The data from the API is handled by the Jobs Controller `app/controllers/jobs_controller.rb`.
 The `fetch_api` method returns the reponse as a JSON-object. This is so I can display the jobs and job details in the Index and Show views.
+
 `config/credentials.yml.enc` holds the encrypted API Token that is parsed in to `fetch_api` as `api_token`.
 If the API Token needs to be changed, only `config/credentials.yml.enc` needs to be updated and the method should work as before.
 
