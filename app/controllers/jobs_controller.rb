@@ -5,7 +5,7 @@ class JobsController < ApplicationController
   end
 
   def show
-    @job = fetch_api.find(params[:id])
+    @job = fetch_api.detect {|job| job["id"] == 212821711}
   end
 end
 
@@ -18,7 +18,7 @@ private
   end
 
 #  def job_params
-#    params.require(:job).permit(:title, :description, :priority)
+#    params.require(:job).permit(:title, :description, :priority, :id)
 #  end
 
 #response[0]['title']
