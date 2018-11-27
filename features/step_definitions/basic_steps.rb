@@ -10,6 +10,6 @@ Given("I click on {string}") do |link|
     click_on link
 end
 
-Then("I fill in {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+Then("I fill in {string} with {string}") do |field, content|
+    fill_in field, with: content
 end
